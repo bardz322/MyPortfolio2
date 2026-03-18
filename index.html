@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Modern minimalist portfolio with a neon yellow, white, and black theme." />
+
+    <title>Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">YourName</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Primary">
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="nav-toggle-bars" aria-hidden="true"></span>
+          </button>
+
+          <ul id="nav-links" class="nav-links">
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#projects">Projects</a></li>
+            <li><a class="nav-link" href="#skills">Skills</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="top" class="section hero">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Available for freelance • 2026</p>
+            <h1 class="hero-title">
+              Hi, I’m <span class="accent">Your Name</span>.
+              <span class="hero-subtitle">Web Developer</span>
+            </h1>
+            <p class="hero-tagline">
+              I build clean, fast, and accessible web experiences—minimalist design with a subtle futuristic edge.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projects">View Projects</a>
+              <a class="btn btn-ghost" href="#contact">Contact Me</a>
+            </div>
+
+            <div class="hero-meta">
+              <a class="meta-link" href="#" aria-label="GitHub (update link)">GitHub</a>
+              <span class="meta-dot" aria-hidden="true"></span>
+              <a class="meta-link" href="#" aria-label="LinkedIn (update link)">LinkedIn</a>
+              <span class="meta-dot" aria-hidden="true"></span>
+              <a class="meta-link" href="#" aria-label="Download resume (update link)">Resume</a>
+            </div>
+          </div>
+
+          <div class="hero-avatar reveal" data-reveal-delay="120">
+            <div class="avatar-shell">
+              <div class="avatar-clip" aria-hidden="true">
+                <img
+                  class="avatar-img"
+                  src="avatar.png"
+                  width="720"
+                  height="720"
+                  alt="Portrait of Your Name"
+                  loading="eager"
+                  decoding="async"
+                />
+              </div>
+            </div>
+            <p class="avatar-caption">Minimal. Professional. Neon‑touched.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2 class="section-title">About</h2>
+            <p class="section-kicker">A focused builder with taste for clarity.</p>
+          </div>
+
+          <div class="about-grid">
+            <div class="card reveal">
+              <h3 class="card-title">What I do</h3>
+              <p class="card-text">
+                I design and develop modern interfaces with strong hierarchy, polished interactions, and performance in mind.
+                I care about accessible UX, maintainable code, and shipping.
+              </p>
+              <ul class="clean-list">
+                <li>Semantic HTML + modern CSS</li>
+                <li>Component-driven UI thinking</li>
+                <li>Performance + accessibility by default</li>
+              </ul>
+            </div>
+
+            <div class="card reveal" data-reveal-delay="80">
+              <h3 class="card-title">How I work</h3>
+              <p class="card-text">
+                Minimal systems, crisp spacing, and small details that feel premium. Neon accents are used sparingly to guide attention—
+                not to overwhelm.
+              </p>
+              <div class="pill-row" role="list" aria-label="Core traits">
+                <span class="pill" role="listitem">Minimalist</span>
+                <span class="pill" role="listitem">Reliable</span>
+                <span class="pill" role="listitem">Detail‑oriented</span>
+                <span class="pill" role="listitem">Fast iteration</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2 class="section-title">Projects</h2>
+            <p class="section-kicker">Selected work—clean builds with neon clarity.</p>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card reveal">
+              <div class="project-top">
+                <h3 class="project-title">Project One</h3>
+                <span class="project-badge">UI • Front-end</span>
+              </div>
+              <p class="project-desc">
+                Minimal dashboard with responsive layout, accessible components, and subtle motion.
+              </p>
+              <div class="project-actions">
+                <a class="btn btn-small btn-primary" href="#" aria-label="View Project One (update link)">View</a>
+                <a class="btn btn-small btn-ghost" href="#" aria-label="Source for Project One (update link)">Code</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal" data-reveal-delay="70">
+              <div class="project-top">
+                <h3 class="project-title">Project Two</h3>
+                <span class="project-badge">Web App</span>
+              </div>
+              <p class="project-desc">
+                Lightweight app with fast load times, clean typography, and polished hover states.
+              </p>
+              <div class="project-actions">
+                <a class="btn btn-small btn-primary" href="#" aria-label="View Project Two (update link)">View</a>
+                <a class="btn btn-small btn-ghost" href="#" aria-label="Source for Project Two (update link)">Code</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal" data-reveal-delay="140">
+              <div class="project-top">
+                <h3 class="project-title">Project Three</h3>
+                <span class="project-badge">Landing Page</span>
+              </div>
+              <p class="project-desc">
+                High-conversion landing with strong hierarchy, micro‑interactions, and accessible forms.
+              </p>
+              <div class="project-actions">
+                <a class="btn btn-small btn-primary" href="#" aria-label="View Project Three (update link)">View</a>
+                <a class="btn btn-small btn-ghost" href="#" aria-label="Source for Project Three (update link)">Code</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2 class="section-title">Skills</h2>
+            <p class="section-kicker">A compact, practical toolkit.</p>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill reveal">
+              <div class="skill-row">
+                <span class="skill-name">HTML</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="meter" role="meter" aria-label="HTML proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="92">
+                <div class="meter-fill" style="--w: 92%"></div>
+              </div>
+            </div>
+
+            <div class="skill reveal" data-reveal-delay="60">
+              <div class="skill-row">
+                <span class="skill-name">CSS</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="meter" role="meter" aria-label="CSS proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90">
+                <div class="meter-fill" style="--w: 90%"></div>
+              </div>
+            </div>
+
+            <div class="skill reveal" data-reveal-delay="120">
+              <div class="skill-row">
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-level">Strong</span>
+              </div>
+              <div
+                class="meter"
+                role="meter"
+                aria-label="JavaScript proficiency"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="84"
+              >
+                <div class="meter-fill" style="--w: 84%"></div>
+              </div>
+            </div>
+
+            <div class="skill reveal" data-reveal-delay="180">
+              <div class="skill-row">
+                <span class="skill-name">UX / UI</span>
+                <span class="skill-level">Strong</span>
+              </div>
+              <div class="meter" role="meter" aria-label="UX/UI proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="86">
+                <div class="meter-fill" style="--w: 86%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2 class="section-title">Contact</h2>
+            <p class="section-kicker">Let’s build something clean and bold.</p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-copy reveal">
+              <h3 class="contact-title">Say hello</h3>
+              <p class="contact-text">
+                Send a message and I’ll get back to you. The form is lightweight and designed with glowing focus states for clarity.
+              </p>
+              <ul class="clean-list">
+                <li><a class="meta-link" href="mailto:you@example.com">you@example.com</a></li>
+                <li><a class="meta-link" href="#" aria-label="Your location (optional)">Your City, Country</a></li>
+              </ul>
+            </div>
+
+            <form class="contact-form card reveal" id="contact-form" novalidate>
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" autocomplete="name" required placeholder="Your name" />
+                <p class="field-error" id="err-name" aria-live="polite"></p>
+              </div>
+
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@email.com" />
+                <p class="field-error" id="err-email" aria-live="polite"></p>
+              </div>
+
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                  placeholder="Tell me about your project…"
+                ></textarea>
+                <p class="field-error" id="err-message" aria-live="polite"></p>
+              </div>
+
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit">Send Message</button>
+                <p class="form-note" id="form-note" aria-live="polite"></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-text">© <span id="year"></span> YourName. Built with minimal neon.</p>
+        <a class="back-top" href="#top">Back to top</a>
+      </div>
+    </footer>
+  </body>
+</html>
